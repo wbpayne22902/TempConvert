@@ -4,7 +4,6 @@ string? theKey;
 reader: Console.Write("C for celsius or F for Fahrenheit> ");
 //ConsoleKeyInfo consoleKey = Console.ReadKey();
 theKey = Console.ReadLine();
-Console.WriteLine();
 Console.Write("Enter temp to convert> ");
 try
 {
