@@ -1,5 +1,4 @@
 ﻿//See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
 double tempFrom, tempTo;
 string? theKey;
 reader: Console.Write("C for celsius or F for Fahrenheit> ");
