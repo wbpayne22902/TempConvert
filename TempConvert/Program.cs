@@ -29,5 +29,6 @@ try
 catch (Exception ex)
 {
     Console.WriteLine($"Error: {ex.Message}");
+    Console.WriteLine("Exiting now...");
     Environment.Exit(1);
 }
