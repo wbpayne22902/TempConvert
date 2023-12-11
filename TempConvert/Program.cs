@@ -1,6 +1,4 @@
 ﻿//See https://aka.ms/new-console-template for more information
-using System.Diagnostics;
-
 double tempFrom;
 string? theKey;
 reader: Console.Write("C for celsius or F for Fahrenheit> ");
