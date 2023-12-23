@@ -1,7 +1,7 @@
 ﻿//See https://aka.ms/new-console-template for more information
 double tempFrom;
 string? theKey;
-reader: Console.Write("C for celsius or F for Fahrenheit> ");
+reader: Console.Write("C for Celsius or F for Fahrenheit> ");
 //ConsoleKeyInfo consoleKey = Console.ReadKey();
 theKey = Console.ReadLine();
 Console.Write("Enter temp to convert> ");
