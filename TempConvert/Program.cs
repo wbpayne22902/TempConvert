@@ -42,6 +42,6 @@ static double doFtoC(double degF)
 static double doCtoF(double degC)
 {
     double tempTo;
-                tempTo = (9.0 / 5.0) * degC + 32.0;
+    tempTo = (9.0 / 5.0) * degC + 32.0;
     return tempTo;
 }
