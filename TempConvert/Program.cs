@@ -38,6 +38,7 @@ catch (Exception ex)
     Console.WriteLine("Exiting now...");
     Environment.Exit(1);
 }
+Console.WriteLine("Thank you for using the temperature converter!");
 
 static double doFtoC(double degF)
 {
