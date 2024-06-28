@@ -1,8 +1,16 @@
 ﻿//See https://aka.ms/new-console-template for more information
+//This is a simple temperature converter that converts Fahrenheit to Celsius and vice versa.
+//It uses a switch statement to determine which conversion to perform.
+//It uses a goto statement to loop back to the beginning if the user enters an invalid key.
+//It uses a try-catch block to catch any exceptions that may occur.
+//It uses a static method to perform the Fahrenheit to Celsius conversion.
+//It uses a static method to perform the Celsius to Fahrenheit conversion.
+//It uses a nullable string to store the user's input for the key.
+//It uses a nullable double to store the user's input for the temperature to convert.
+
 double tempFrom;
 string? theKey;
 reader: Console.Write("C for Celsius or F for Fahrenheit> ");
-//ConsoleKeyInfo consoleKey = Console.ReadKey();
 theKey = Console.ReadLine();
 Console.Write("Enter temp to convert> ");
 try
