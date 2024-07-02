@@ -8,10 +8,36 @@
 //It uses a nullable string to store the user's input for the key.
 //It uses a nullable double to store the user's input for the temperature to convert.
 
+/// <summary>
+/// Converts temperature from Fahrenheit to Celsius.
+/// </summary>
+/// <param name="degF">The temperature in Fahrenheit.</param>
+/// <returns>The temperature in Celsius.</returns>
+static double doFtoC(double degF)
+{
+    double tempTo;
+    tempTo = (degF - 32.0) * (5.0 / 9.0);
+    return tempTo;
+}
+
+/// <summary>
+/// Converts temperature from Celsius to Fahrenheit.
+/// </summary>
+/// <param name="degC">The temperature in Celsius.</param>
+/// <returns>The temperature in Fahrenheit.</returns>
+static double doCtoF(double degC)
+{
+    double tempTo;
+    tempTo = (9.0 / 5.0) * degC + 32.0;
+    return tempTo;
+}
+
 double tempFrom;
 string? theKey;
+
 reader: Console.Write("C for Celsius or F for Fahrenheit> ");
 theKey = Console.ReadLine();
+
 Console.Write("Enter temp to convert> ");
 try
 {
@@ -38,19 +64,5 @@ catch (Exception ex)
     Console.WriteLine("Exiting now...");
     Environment.Exit(1);
 }
+
 Console.WriteLine("Thank you for using the temperature converter!");
-
-static double doFtoC(double degF)
-{
-    double tempTo;
-    tempTo = (degF - 32.0) * (5.0 / 9.0);
-    return tempTo;
-
-}
-
-static double doCtoF(double degC)
-{
-    double tempTo;
-    tempTo = (9.0 / 5.0) * degC + 32.0;
-    return tempTo;
-}
