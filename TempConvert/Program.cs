@@ -35,7 +35,7 @@ static double doCtoF(double degC)
 double tempFrom;
 string? theKey;
 
-reader: Console.Write("C for Celsius or F for Fahrenheit> ");
+reader: Console.Write("Enter C for Celsius or F for Fahrenheit> ");
 theKey = Console.ReadLine();
 
 Console.Write("Enter temp to convert> ");
