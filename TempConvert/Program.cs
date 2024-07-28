@@ -8,11 +8,6 @@
 //It uses a nullable string to store the user's input for the key.
 //It uses a nullable double to store the user's input for the temperature to convert.
 
-/// <summary>
-/// Converts temperature from Fahrenheit to Celsius.
-/// </summary>
-/// <param name="degF">The temperature in Fahrenheit.</param>
-/// <returns>The temperature in Celsius.</returns>
 static double doFtoC(double degF)
 {
     double tempTo;
@@ -20,11 +15,6 @@ static double doFtoC(double degF)
     return tempTo;
 }
 
-/// <summary>
-/// Converts temperature from Celsius to Fahrenheit.
-/// </summary>
-/// <param name="degC">The temperature in Celsius.</param>
-/// <returns>The temperature in Fahrenheit.</returns>
 static double doCtoF(double degC)
 {
     double tempTo;
