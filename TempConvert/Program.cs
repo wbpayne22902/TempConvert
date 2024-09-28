@@ -20,34 +20,41 @@ static double DoCtoF(double degC)
     return tempTo;
 }
 
-reader: Console.Write("Enter C for Celsius or F for Fahrenheit> ");
-var theKey = Console.ReadLine();
+bool validInput = false;
 
-Console.Write("Enter temp to convert> ");
-try
+while (!validInput)
 {
-    var tempFrom = Convert.ToDouble(Console.ReadLine());
-    if (theKey is not null)
+    Console.Write("Enter C for Celsius or F for Fahrenheit> ");
+    var theKey = Console.ReadLine();
+
+    Console.Write("Enter temp to convert> ");
+    try
     {
-        switch (theKey.ToUpper())
+        var tempFrom = Convert.ToDouble(Console.ReadLine());
+        if (theKey is not null)
         {
-            case "F":
-                Console.WriteLine($"{tempFrom} degF = {DoFtoC(tempFrom)} degC");
-                break;
-            case "C":
-                Console.WriteLine($"{tempFrom} degC = {DoCtoF(tempFrom)} degF");
-                break;
-            default:
-                Console.WriteLine("You must enter C or F!");
-                goto reader;
+            switch (theKey.ToUpper())
+            {
+                case "F":
+                    Console.WriteLine($"{tempFrom} degF = {DoFtoC(tempFrom)} degC");
+                    validInput = true;
+                    break;
+                case "C":
+                    Console.WriteLine($"{tempFrom} degC = {DoCtoF(tempFrom)} degF");
+                    validInput = true;
+                    break;
+                default:
+                    Console.WriteLine("You must enter C or F!");
+                    break;
+            }
         }
     }
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"Error: {ex.Message}");
-    Console.WriteLine("Exiting now...");
-    Environment.Exit(1);
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error: {ex.Message}");
+        Console.WriteLine("Exiting now...");
+        Environment.Exit(1);
+    }
 }
 
 Console.WriteLine("Thank you for using the temperature converter!");
