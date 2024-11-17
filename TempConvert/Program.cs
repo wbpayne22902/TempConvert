@@ -8,33 +8,27 @@
 //It uses a nullable string to store the user's input for the key.
 //It uses a nullable double to store the user's input for the temperature to convert.
 
-static double DoFtoC(double degF)
-{
+static double DoFtoC(double degF) {
     var tempTo = (degF - 32.0) * (5.0 / 9.0);
     return tempTo;
 }
 
-static double DoCtoF(double degC)
-{
+static double DoCtoF(double degC) {
     var tempTo = (9.0 / 5.0) * degC + 32.0;
     return tempTo;
 }
 
 bool validInput = false;
 
-while (!validInput)
-{
+while (!validInput) {
     Console.Write("Enter C for Celsius or F for Fahrenheit> ");
     var theKey = Console.ReadLine();
 
     Console.Write("Enter temp to convert> ");
-    try
-    {
+    try {
         var tempFrom = Convert.ToDouble(Console.ReadLine());
-        if (theKey is not null)
-        {
-            switch (theKey.ToUpper())
-            {
+        if (theKey is not null) {
+            switch (theKey.ToUpper()) {
                 case "F":
                     Console.WriteLine($"{tempFrom} degF = {DoFtoC(tempFrom)} degC");
                     validInput = true;
@@ -48,9 +42,7 @@ while (!validInput)
                     break;
             }
         }
-    }
-    catch (Exception ex)
-    {
+    } catch (Exception ex) {
         Console.WriteLine($"Error: {ex.Message}");
         Console.WriteLine("Exiting now...");
         Environment.Exit(1);
