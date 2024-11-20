@@ -28,7 +28,7 @@ while (!validInput) {
     try {
         var tempFrom = Convert.ToDouble(Console.ReadLine());
         if (theKey is not null) {
-            switch (theKey.ToUpper()) {
+            switch (theKey.ToUpperInvariant()) {
                 case "F":
                     Console.WriteLine($"{tempFrom} degF = {DoFtoC(tempFrom)} degC");
                     validInput = true;
