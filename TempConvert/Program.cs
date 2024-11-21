@@ -30,11 +30,11 @@ while (!validInput) {
         if (theKey is not null) {
             switch (theKey.ToUpperInvariant()) {
                 case "F":
-                    Console.WriteLine($"{tempFrom} degF = {DoFtoC(tempFrom)} degC");
+                    Console.WriteLine($"{tempFrom} degF = {DoFtoC(tempFrom):N4} degC");
                     validInput = true;
                     break;
                 case "C":
-                    Console.WriteLine($"{tempFrom} degC = {DoCtoF(tempFrom)} degF");
+                    Console.WriteLine($"{tempFrom} degC = {DoCtoF(tempFrom):N4} degF");
                     validInput = true;
                     break;
                 default:
