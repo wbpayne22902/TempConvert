@@ -24,7 +24,7 @@ while (!validInput) {
     Console.Write("Enter C for Celsius or F for Fahrenheit> ");
     var theKey = Console.ReadLine();
 
-    Console.Write("Enter temp to convert> ");
+    Console.Write("Enter temp to convert> ".ToUpperInvariant());
     try {
         var tempFrom = Convert.ToDouble(Console.ReadLine());
         if (theKey is not null) {
