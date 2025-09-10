@@ -23,6 +23,7 @@ try
 {
     while (true)
     {
+        Console.WriteLine("Welcome to the Temperature Converter!");
         Console.Write("Enter C for Celsius or F for Fahrenheit> ");
         string? rawKey = Console.ReadLine();
         if (rawKey is null)
