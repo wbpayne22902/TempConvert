@@ -19,6 +19,22 @@ static double DoCtoF(double degC)
     return tempTo;
 }
 
+static void TryBeep()
+{
+    try
+    {
+        Console.Beep();
+    }
+    catch (PlatformNotSupportedException)
+    {
+        // Ignore on platforms that don't support Console.Beep()
+    }
+    catch
+    {
+        // Swallow any other beep-related exceptions to avoid treating them as fatal
+    }
+}
+
 try
 {
     while (true)
@@ -77,6 +93,7 @@ try
     }
 
     Console.WriteLine("Thank you for using the temperature converter!");
+    TryBeep();
 }
 catch (Exception ex)
 {
