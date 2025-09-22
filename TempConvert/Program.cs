@@ -7,36 +7,18 @@
 // It uses a static method to perform the Fahrenheit to Celsius conversion.
 // It uses a static method to perform the Celsius to Fahrenheit conversion.
 
-/// <summary>
-/// Converts a temperature from Fahrenheit to Celsius.
-/// </summary>
-/// <param name="degF">The temperature in Fahrenheit.</param>
-/// <returns>The equivalent temperature in Celsius.</returns>
 static double DoFtoC(double degF)
 {
     var tempTo = (degF - 32.0) * (5.0 / 9.0);
     return tempTo;
 }
 
-/// <summary>
-/// Converts a temperature from Celsius to Fahrenheit.
-/// </summary>
-/// <param name="degC">The temperature in Celsius.</param>
-/// <returns>The equivalent temperature in Fahrenheit.</returns>
 static double DoCtoF(double degC)
 {
     var tempTo = (9.0 / 5.0) * degC + 32.0;
     return tempTo;
 }
 
-/// <summary>
-/// Attempts to play a system beep sound, handling exceptions that may occur on unsupported platforms.
-/// </summary>
-/// <remarks>
-/// This method safely attempts to play a beep sound through the Console.Beep() method.
-/// It handles PlatformNotSupportedException explicitly and silently handles any other exceptions
-/// that might occur during the beep operation to prevent them from being treated as fatal errors.
-/// </remarks>
 static void TryBeep()
 {
     try
