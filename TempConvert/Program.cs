@@ -73,7 +73,7 @@ try
                 Environment.Exit(1);
             }
 
-            if (double.TryParse(input, NumberStyles.Float, CultureInfo.CurrentCulture, out tempFrom))
+            if (double.TryParse(input, NumberStyles.Float | NumberStyles.AllowParentheses, CultureInfo.CurrentCulture, out tempFrom))
             {
                 break;
             }
