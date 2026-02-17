@@ -92,11 +92,11 @@ try
         break;
     }
 
-    Console.WriteLine("Thank you for using the temperature converter!");
+    Console.WriteLine("Thank you for using my temperature converter!");
     TryBeep();
 }
 catch (Exception ex)
 {
-    Console.Error.WriteLine($"Error: {ex.Message}");
+    Console.Error.WriteLine($"Error here: {ex.Message}");
     Environment.Exit(1);
 }
