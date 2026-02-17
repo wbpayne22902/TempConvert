@@ -28,6 +28,7 @@ static void TryBeep()
     catch (PlatformNotSupportedException)
     {
         // Ignore on platforms that don't support Console.Beep()
+        // Also print a message to inform the user that the beep is not supported
         Console.WriteLine("Beep not supported on this platform.");
     }
     catch
