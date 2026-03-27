@@ -84,11 +84,11 @@ try
 
         if (key == "F")
         {
-            Console.WriteLine($"{tempFrom:F2} degF = {DoFtoC(tempFrom):F2} degC");
+            Console.WriteLine($"{tempFrom:0.#####} degF = {DoFtoC(tempFrom):0.#####} degC");
         }
         else
         {
-            Console.WriteLine($"{tempFrom:F2} degC = {DoCtoF(tempFrom):F2} degF");
+            Console.WriteLine($"{tempFrom:0.#####} degC = {DoCtoF(tempFrom):0.#####} degF");
         }
 
         break;
