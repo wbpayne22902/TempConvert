@@ -41,7 +41,7 @@ try
 {
     while (true)
     {
-        Console.WriteLine("Welcome to the Temperature Converter by Wilhelm Payne v2026.2!");
+        Console.WriteLine("Welcome to the Temperature Converter by Wilhelm Payne v2026.3!");
         Console.Write("Enter C for Celsius or F for Fahrenheit> ");
         string? rawKey = Console.ReadLine();
         if (rawKey is null)
@@ -67,7 +67,7 @@ try
         double tempFrom;
         while (true)
         {
-            Console.Write("Enter temp to convert> ");
+            Console.Write("Enter temperature to convert> ");
             string? input = Console.ReadLine();
             if (input is null)
             {
