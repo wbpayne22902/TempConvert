@@ -9,9 +9,4 @@
     <PublishAot>True</PublishAot>
     <LangVersion>15</LangVersion>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="11.0.0" />
-  </ItemGroup>
-
 </Project>
