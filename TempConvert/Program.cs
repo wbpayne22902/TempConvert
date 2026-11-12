@@ -82,14 +82,9 @@ try
             Console.WriteLine("Please enter a valid numeric temperature.");
         }
 
-        if (key == "F")
-        {
-            Console.WriteLine($"{tempFrom:0.#####} degF = {DoFtoC(tempFrom):0.#####} degC");
-        }
-        else
-        {
-            Console.WriteLine($"{tempFrom:0.#####} degC = {DoCtoF(tempFrom):0.#####} degF");
-        }
+        Console.WriteLine(key == "F"
+            ? $"{tempFrom:0.#####} degF = {DoFtoC(tempFrom):0.#####} degC"
+            : $"{tempFrom:0.#####} degC = {DoCtoF(tempFrom):0.#####} degF");
 
         break;
     }
